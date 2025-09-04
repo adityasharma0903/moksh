@@ -61,7 +61,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 14, scale: 0.98 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 200, damping: 22 } },
+  show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring" as const , stiffness: 200, damping: 22 } },
 }
 
 export function OfferingsSection({ className }: { className?: string }) {
