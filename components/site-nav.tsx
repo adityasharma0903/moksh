@@ -32,9 +32,9 @@ export function SiteNav() {
     >
       <div className="mx-auto max-w-6xl px-4 py-3 md:py-4 flex items-center justify-between">
         <Link href="/" className="font-semibold tracking-tight hover:opacity-90 transition-opacity">
-          <span className="text-cyan-400">VLA</span>
-          <span className="text-white"> Studio</span>
-          <span className="sr-only">VLA Studio Home</span>
+          <span className="text-cyan-400">MOKSH</span>
+          {/* <span className="text-white"> Studio</span> */}
+          <span className="sr-only">MOKSH Home</span>
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
           <a href="#projects" className="hover:text-cyan-400 transition-colors">
