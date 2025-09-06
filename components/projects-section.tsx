@@ -13,6 +13,7 @@ export function ProjectsSection({
     image: string
     summary: string
     tags: string[]
+    link:string
   }[]
 }) {
   return (
