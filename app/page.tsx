@@ -60,8 +60,8 @@ export default function Page() {
       year: "2025",
       image: "/edusphere.png",
       summary: "A platform for students to study and collaborate together",
-      tags: ["React.js", "MongoDB", "JWT", "Google Maps", "Pinecone", "TTS", "Whisper", "LangChain"],
-      link: "https://nyaygpt.vercel.app/",
+      tags: ["HTML", "CSS", "JS", "Express.js", "Node.js", "MongoDB", "JWT"],
+      link: "https://edu-sphere-1.vercel.app/",
     },
   ]
 
