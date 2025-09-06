@@ -39,7 +39,7 @@ export function ProjectCard(props: {
             />
           </motion.div>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
           <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
             <div className="flex items-center justify-between gap-3">
@@ -47,10 +47,10 @@ export function ProjectCard(props: {
               <span className="text-xs px-2 py-1 rounded-full bg-white text-black">{year}</span>
             </div>
             <p className="mt-1 text-slate-300">{category}</p>
-            <p className="mt-2 text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <p className="mt-2 text-sm text-slate-400 line-clamp-2">
               {summary}
             </p>
-            <div className="mt-3 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="mt-3 flex flex-wrap gap-2">
               {tags.map((t) => (
                 <span key={t} className="text-[11px] px-2 py-1 rounded-full border border-white/15 text-slate-300">
                   {t}
