@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Spline from "@splinetool/react-spline"
 
 export function Hero() {
   return (
@@ -8,7 +9,8 @@ export function Hero() {
       aria-label="Hero"
       className="relative pt-28 md:pt-36 pb-12 md:pb-16 border-b border-white/10 overflow-hidden"
     >
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-6xl px-4 relative z-10">
+        {/* Left Side Text */}
         <motion.p
           className="text-sm tracking-widest text-slate-400 mb-4"
           initial={{ y: 12, opacity: 0 }}
@@ -18,7 +20,7 @@ export function Hero() {
           Vaibhav Katyal • Lakshya Chauhan • Aditya Sharma
         </motion.p>
 
-        <h1 className="text-balance leading-tight font-semibold text-4xl md:text-6xl lg:text-7xl">
+        <h1 className="text-balance leading-tight font-semibold text-4xl md:text-6xl lg:text-7xl max-w-2xl">
           <KineticWord text="We" /> build <KineticWord text="unforgettable" accent /> websites for{" "}
           <KineticWord text="local" /> <KineticWord text="businesses" accent />.
         </h1>
@@ -29,7 +31,7 @@ export function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.25, duration: 0.4 }}
         >
-          Full‑stack experiences that turn visitors into customers: fast, animated, and laser‑focused on results. We’ve
+          Full-stack experiences that turn visitors into customers: fast, animated, and laser-focused on results. We’ve
           shipped across food, retail, fitness, services, and more.
         </motion.p>
 
@@ -46,7 +48,13 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Backdrop */}
       <HeroBackdrop />
+
+      {/* Spline Model on Right Side */}
+      <div className="absolute inset-y-0 right-0 w-1/2 hidden md:block">
+        <Spline scene="https://prod.spline.design/nKFbdfT00o7sBJy4/scene.splinecode" />
+      </div>
     </section>
   )
 }
@@ -83,7 +91,6 @@ function MagneticCTA() {
 }
 
 function HeroBackdrop() {
-  // Decorative, no gradient fills—only borders/outlines for visual energy
   return (
     <motion.div
       aria-hidden
