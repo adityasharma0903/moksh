@@ -85,7 +85,7 @@ function CTA() {
         </div>
         <div className="flex items-center gap-3">
           <a
-            href="mailto:adityasharma08093@gmail.com"
+            href="mailto:mokshdigitalco@gmail.com"
             className="px-4 py-2 rounded-full bg-white text-black hover:bg-lime-300 transition-colors"
           >
             Email Us
