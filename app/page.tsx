@@ -5,6 +5,7 @@ import { Team } from "@/components/team"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { OfferingsSection } from "@/components/offerings-section"
+import PricingCards from "@/components/PricingCards"
 
 export default function Page() {
   // Simple mock data — replace with real projects later
@@ -89,6 +90,7 @@ export default function Page() {
       </section>
       <OfferingsSection />
       <ProjectsSection projects={projects} />
+      <PricingCards />
       <Team />
       <SiteFooter />
     </main>
