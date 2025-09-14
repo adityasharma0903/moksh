@@ -1,7 +1,6 @@
 import { Hero } from "@/components/hero"
 import { Marquee } from "@/components/marquee"
 import { ProjectsSection } from "@/components/projects-section"
-import { Team } from "@/components/team"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { OfferingsSection } from "@/components/offerings-section"
