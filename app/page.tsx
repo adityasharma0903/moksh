@@ -90,8 +90,51 @@ export default function Page() {
       </section>
       <OfferingsSection />
       <ProjectsSection projects={projects} />
+
+      {/* Certificate Section */}
+      <section className="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-10">
+        <div className="flex-1 flex flex-col items-start mb-8 md:mb-0">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-cyan-400">
+            Government Authorized Certificate
+          </h2>
+          <p className="mb-6 text-slate-300 max-w-md">
+            We are officially recognized as a registered enterprise under the Government of India’s UDYAM scheme.
+            This certificate authenticates our commitment to legal compliance, transparency, and quality service delivery.
+            <br /><br />
+            <span className="text-cyan-300 font-semibold">UDYAM Registration Number:</span> UDYAM-PB-20-018502
+            <br />
+            <span className="text-cyan-300 font-semibold">Enterprise Name:</span> MOKSH
+          </p>
+          <div className="flex gap-4">
+            <a
+              href="/UDYYAM.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 rounded-full bg-cyan-400 text-black font-semibold hover:bg-cyan-300 transition-colors"
+            >
+              View
+            </a>
+            <a
+              href="/UDYYAM.pdf"
+              download
+              className="px-6 py-2 rounded-full bg-white text-black font-semibold hover:bg-lime-300 transition-colors"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <div className="border-4 border-cyan-400 rounded-xl shadow-lg bg-white/5 p-4 w-full max-w-md">
+            <img
+              src="/certificate.png"
+              alt="Government Authorized Certificate"
+              className="rounded-lg w-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       <PricingCards />
-      <Team />
       <SiteFooter />
     </main>
   )

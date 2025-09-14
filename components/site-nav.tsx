@@ -40,9 +40,9 @@ export function SiteNav() {
           <a href="#projects" className="hover:text-cyan-400 transition-colors">
             Projects
           </a>
-          <a href="#team" className="hover:text-cyan-400 transition-colors">
-            Team
-          </a>
+          <Link href="/about-us" className="hover:text-cyan-400 transition-colors">
+            About Us
+          </Link>
           <a
             href="#contact"
             className="px-3 py-1.5 rounded-full bg-white text-black hover:bg-lime-300 transition-colors"
